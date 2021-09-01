@@ -1,0 +1,23 @@
+def deleteMid(head):
+    '''
+    head:  head of given linkedList
+    return: head of resultant llist
+    '''
+    
+    #code here
+    if head is None or head.next is None:
+        return None
+    
+    prev, slow, fast = None, head, head
+    
+    while fast and fast.next:
+        
+        fast = fast.next.next
+       
+        prev = slow;
+       
+        slow = slow.next
+       
+    prev.next = slow.next
+    
+    return head;
