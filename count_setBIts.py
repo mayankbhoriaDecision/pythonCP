@@ -1,5 +1,7 @@
 # Function to get no of set bits in binary
 # representation of passed binary no. */
+#Brian Kernighan
+
 def countSetBits(n):
 
 	count = 0
