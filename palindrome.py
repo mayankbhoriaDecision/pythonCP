@@ -31,4 +31,49 @@ class Solution(object):
         
         else:
             return False
+
+
+
+
+
+
+
+class Solution(object):
+    def isPalindrome(self, x):
+        """
+        :type x: int
+        :rtype: bool
+        """
+
+        rev=0
+
+        originalval=x
+
+        while(x>0):
+
+            lastdigit=x%10
+
+            rev=rev*10 + lastdigit
+
+            x=x/10
+
+
+        if(rev==originalval):
+            return True
+        else:
+            return False
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
         
