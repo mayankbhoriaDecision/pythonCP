@@ -8,7 +8,7 @@ def Count_Trailing_zeroes_in_factorial(N):
     while(i<=N):
         
         res=res+N//i 
-        N=N//i
+      
         i=i*5
         
     return res 
